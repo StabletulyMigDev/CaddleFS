@@ -1,14 +1,15 @@
 {
   "name": "electron-app",
-  "productName": "electron-app",
-  "version": "1.0.0",
-  "description": "My Electron application description",
+  "productName": "CaddleFS Tools",
+  "version": "0.2.32",
+  "description": "CaddleFS gui organizer",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
+    "build": "electron-builder -wl",
     "lint": "echo \"No linting configured\""
   },
   "devDependencies": {
@@ -20,7 +21,8 @@
     "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
     "@electron-forge/plugin-fuses": "^7.4.0",
     "@electron/fuses": "^1.8.0",
-    "electron": "31.0.1"
+    "electron": "31.0.1",
+    "electron-builder": "^24.13.3"
   },
   "keywords": [],
   "author": {
@@ -32,6 +34,10 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "bootstrap": "^5.3.3",
+   
     "electron-squirrel-startup": "^1.0.1"
-  }
+  },
+  "build": {
+    "appId": "org.miglab.caddlefs.tools"
+}
 }
